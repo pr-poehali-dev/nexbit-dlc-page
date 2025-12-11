@@ -8,9 +8,9 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#0a0e14]">
+    <div className="relative min-h-screen overflow-hidden">
       <div 
-        className="absolute inset-0 opacity-20"
+        className="fixed inset-0"
         style={{
           backgroundImage: `url('https://cdn.poehali.dev/files/Без названия398_20251211112606.jpg')`,
           backgroundSize: 'cover',
@@ -19,7 +19,7 @@ const Index = () => {
         }}
       />
       
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0e14]/50 to-[#0a0e14]" />
+      <div className="fixed inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
       
       <div className="absolute top-0 left-0 w-full h-1 bg-neon-green animate-scan-line opacity-30" />
       
