@@ -6,40 +6,41 @@
 
 @layer base {
   :root {
-    --background: 220 20% 7%;
-    --foreground: 120 100% 90%;
+    --background: 0 20% 10%;
+    --foreground: 0 100% 95%;
 
-    --card: 220 20% 10%;
-    --card-foreground: 120 100% 90%;
+    --card: 0 30% 15%;
+    --card-foreground: 0 100% 95%;
 
-    --popover: 220 20% 10%;
-    --popover-foreground: 120 100% 90%;
+    --popover: 0 30% 15%;
+    --popover-foreground: 0 100% 95%;
 
-    --primary: 120 100% 50%;
-    --primary-foreground: 220 20% 7%;
+    --primary: 0 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 270 95% 70%;
-    --secondary-foreground: 220 20% 7%;
+    --secondary: 0 60% 35%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 20% 15%;
-    --muted-foreground: 120 30% 60%;
+    --muted: 0 25% 20%;
+    --muted-foreground: 0 30% 70%;
 
-    --accent: 120 100% 50%;
-    --accent-foreground: 220 20% 7%;
+    --accent: 0 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 120 100% 25%;
-    --input: 220 20% 15%;
-    --ring: 120 100% 50%;
+    --border: 0 100% 40%;
+    --input: 0 25% 20%;
+    --ring: 0 100% 50%;
 
     --radius: 0.25rem;
 
-    --neon-green: #00ff41;
-    --neon-purple: #9b87f5;
-    --dark-bg: #0a0e14;
-    --dark-surface: #161b22;
+    --neon-red: #ff0000;
+    --dark-red: #8b0000;
+    --crimson: #dc143c;
+    --dark-bg: #1a0000;
+    --dark-surface: #2d0a0a;
   }
 }
 
@@ -65,25 +66,32 @@
 
 @layer utilities {
   .text-neon {
-    color: var(--neon-green);
+    color: var(--neon-red);
     text-shadow:
-      0 0 10px var(--neon-green),
-      0 0 20px var(--neon-green),
-      0 0 30px var(--neon-green);
+      0 0 10px var(--neon-red),
+      0 0 20px var(--neon-red),
+      0 0 30px var(--neon-red);
   }
 
-  .text-neon-purple {
-    color: var(--neon-purple);
+  .text-neon-red {
+    color: var(--neon-red);
     text-shadow:
-      0 0 10px var(--neon-purple),
-      0 0 20px var(--neon-purple);
+      0 0 10px var(--neon-red),
+      0 0 20px var(--neon-red);
+  }
+
+  .text-crimson {
+    color: var(--crimson);
+    text-shadow:
+      0 0 10px var(--crimson),
+      0 0 20px var(--crimson);
   }
 
   .border-neon {
-    border-color: var(--neon-green);
+    border-color: var(--neon-red);
     box-shadow:
-      0 0 10px var(--neon-green),
-      inset 0 0 10px rgba(0, 255, 65, 0.1);
+      0 0 10px var(--neon-red),
+      inset 0 0 10px rgba(255, 0, 0, 0.1);
   }
 
   .glitch {

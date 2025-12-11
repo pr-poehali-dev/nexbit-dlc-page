@@ -63,8 +63,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				neon: {
-					green: '#00ff41',
-					purple: '#9b87f5'
+					red: '#ff0000',
+					crimson: '#dc143c'
 				}
 			},
 			borderRadius: {
